@@ -12,7 +12,7 @@ This README provides detailed steps on how to set up and automate the **EC2 Inst
 terraform -v
 ```
 
-![1]![t1](https://github.com/user-attachments/assets/4d346c04-9298-481f-91c8-7a237f8befe3)
+[t1](https://github.com/user-attachments/assets/4d346c04-9298-481f-91c8-7a237f8befe3)
 
 ---
 
@@ -23,7 +23,7 @@ terraform -v
 aws configure
 ```
 
-![2]![t2](https://github.com/user-attachments/assets/cbafe3f4-2902-43e5-aa7a-d4a0761ce144)
+[t2](https://github.com/user-attachments/assets/cbafe3f4-2902-43e5-aa7a-d4a0761ce144)
 
 
 ---
@@ -36,7 +36,7 @@ mkdir terraform-ec2 && cd terraform-ec2
 touch main.tf
 ```
 
-![3]![t3](https://github.com/user-attachments/assets/124d8227-01dc-4c91-886e-33d41c8f32f6)
+[t3](https://github.com/user-attachments/assets/124d8227-01dc-4c91-886e-33d41c8f32f6)
 
 
 ---
@@ -70,7 +70,7 @@ resource "aws_instance" "example" {
 terraform init
 ```
 
-![5]![t4](https://github.com/user-attachments/assets/d5c34a52-96a3-43e0-a9af-2db3fe1ceba5)
+[t4](https://github.com/user-attachments/assets/d5c34a52-96a3-43e0-a9af-2db3fe1ceba5)
 
 
 ---
@@ -83,7 +83,7 @@ terraform validate
 terraform plan
 ```
 
-![6]![t5](https://github.com/user-attachments/assets/4a653e6a-c804-4851-97f0-4991d70e9f88)
+[t5](https://github.com/user-attachments/assets/4a653e6a-c804-4851-97f0-4991d70e9f88)
 
 
 ---
@@ -95,8 +95,8 @@ terraform plan
 terraform apply -auto-approve
 ```
 
-![7]![t6](https://github.com/user-attachments/assets/235c8236-808b-48fa-b768-212625e444bd)
-![8](https://github.com/user-attachments/assets/382bdb26-76ae-424c-8ba4-10d77f817786)
+[t6](https://github.com/user-attachments/assets/235c8236-808b-48fa-b768-212625e444bd)
+[8](https://github.com/user-attachments/assets/382bdb26-76ae-424c-8ba4-10d77f817786)
 
 ---
 
@@ -107,12 +107,11 @@ terraform apply -auto-approve
 aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,State.Name,PublicIpAddress]' --output table
 ```
 
-![9]![t7](https://github.com/user-attachments/assets/95371bd9-ee73-46bf-a24a-836d47916653)
+[t7](https://github.com/user-attachments/assets/95371bd9-ee73-46bf-a24a-836d47916653)
 
 
 - Or check in the AWS Console.
-
-![10]![terr](https://github.com/user-attachments/assets/70b687bc-0a65-46dd-be5b-426662b2f1a5)
+[terr](https://github.com/user-attachments/assets/70b687bc-0a65-46dd-be5b-426662b2f1a5)
 
 
 ---
@@ -124,8 +123,8 @@ aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,Sta
 terraform destroy -auto-approve
 ```
 
-![11]![t8](https://github.com/user-attachments/assets/10a6dd45-ebce-4a26-bc02-e2a3327ce4fc)
-![12](https://github.com/user-attachments/assets/1e670c1e-c003-47b5-a173-e62ed99381e9)
+[t8](https://github.com/user-attachments/assets/10a6dd45-ebce-4a26-bc02-e2a3327ce4fc)
+[12](https://github.com/user-attachments/assets/1e670c1e-c003-47b5-a173-e62ed99381e9)
 
 ---
 
